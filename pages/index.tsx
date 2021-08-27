@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import { ReviewsPage } from "../components/reviews/reviewpage";
 import Navbar from "../lib/navbar";
 
 const Home: NextPage = () => {
@@ -12,8 +13,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className="px-8">
         <Navbar />
+        <ReviewsPage />
       </main>
 
       <footer></footer>
