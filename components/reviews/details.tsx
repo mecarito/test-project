@@ -13,9 +13,22 @@ export interface Reviews {
 export function ReviewsDetails(props: { details: Reviews[] }) {
   return (
     <div className="mt-8">
-      <div className="text-2xl mb-6 flex flex-row space-x-2">
-        <p> {props.details.length}</p>
-        <h1>Reviews</h1>
+      <div className="flex flex-row justify-between">
+        <div className="text-2xl mb-6 flex flex-row space-x-2">
+          <p> {props.details.length}</p>
+          <h1>Reviews</h1>
+        </div>
+        <div className="flex flex-row gap-x-6 items-center">
+          <p>Sort by</p>
+          <select
+            name="sort by"
+            className="py-2 px-4 w-36  bg-white ring-1 ring-gray-300 
+            outline-none  text-gray-900 text-id"
+          >
+            <option value="time">Time</option>
+            <option value="rating">rating</option>
+          </select>
+        </div>
       </div>
 
       {props.details.map((data) => {
