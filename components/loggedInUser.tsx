@@ -5,15 +5,13 @@ import bell from "../public/bell.svg";
 import chevron from "../public/chevron-down.svg";
 
 export interface LoggedInUser {
-  details: {
-    name: string;
-    image: string;
-    occupation: string;
-    notifications: number;
-  };
+  name: string;
+  image: string;
+  occupation: string;
+  notifications: number;
 }
 
-export default function LoggedInUser(props: LoggedInUser) {
+export default function LoggedInUser(props: { details: LoggedInUser }) {
   return (
     <div className="flex flex-row items-center gap-x-8">
       <div>
@@ -22,7 +20,6 @@ export default function LoggedInUser(props: LoggedInUser) {
         </Badge>
       </div>
       <div className="flex flex-row items-center gap-x-2">
-        {/* <div> */}
         <Image
           src={props.details.image}
           alt="logged in user"
@@ -30,7 +27,6 @@ export default function LoggedInUser(props: LoggedInUser) {
           height={30}
           className="rounded-full"
         />
-        {/* </div> */}
         <div className="flex flex-col gap-0">
           <p className="text-xs">{props.details.name}</p>
           <p className="text-xs">{props.details.occupation}</p>

@@ -8,6 +8,7 @@ interface Navigation {
 }
 export default function Navbar() {
   const loggedInUser = data.loggedInUser;
+
   const navigationMenu: Navigation[] = [
     {
       name: "Overview",
@@ -28,10 +29,10 @@ export default function Navbar() {
       <h1 className="text-black text-2xl">AfyaYako</h1>
       <div className="flex flex-row space-x-16">
         <div className="flex flex-row gap-x-8 items-center">
-          {navigationMenu.map((item) => {
+          {navigationMenu.map((data) => {
             return (
-              <li key={item.name} className="list-none ">
-                <a href={item.link}> {item.name}</a>
+              <li key={data.name} className="list-none ">
+                <a href={data.link}> {data.name}</a>
               </li>
             );
           })}
