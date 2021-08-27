@@ -1,8 +1,30 @@
 {
     "loggedInUser": {
         "name": "Sheldon Cooper",
-        "image": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGRvY3RvcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2UlMjBvZiUyMGElMjBtYW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
         "occupation": "Doctor",
         "notifications": 4
-    }
+    },
+    "reviews": [{
+            "name": "Lily Jones",
+            "image": "https://images.unsplash.com/photo-1615125946109-9455bffbd99c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fGElMjB3b21hbiUyMHBob3RvJTIwb24lMjBhJTIweWVsbG93JTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "rating": 4.2,
+            "date": "May 2020",
+            "content": "I didn't have to wait too long when I went for my visit. Everything went smoothly and everyone was professional."
+        },
+        {
+            "name": "Colleen Warren",
+            "image": "https://images.unsplash.com/photo-1628107664459-38008252c982?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fGElMjB3b21hbiUyMHBob3RvJTIwb24lMjBhJTIweWVsbG93JTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "rating": 3.7,
+            "date": "May 2020",
+            "content": "Friendly staff, clean rooms, and good communication. A+! Finally a great doctors office I want to keep for years."
+        },
+        {
+            "name": "Philip Mccoy",
+            "image": "https://images.unsplash.com/photo-1603559822934-c01e9aa89708?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGElMjBwaG90byUyMG9mJTIwYSUyMGhhcHB5JTIwbWFufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "rating": 4.1,
+            "date": "January 2020",
+            "content": "He’s knowledgeable, caring and very attentive! Love him so much and after my first visit I knew he’s the doctor I’ll be growing old with!"
+        }
+    ]
 }

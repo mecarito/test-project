@@ -24,13 +24,13 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="flex flex-row items-center justify-between">
-      <h1 className="text-black">AfyaYako</h1>
-      <div>
-        <div className="flex flex-row gap-x-4">
+    <div className="flex flex-row items-center justify-between px-8 py-3">
+      <h1 className="text-black text-2xl">AfyaYako</h1>
+      <div className="flex flex-row space-x-16">
+        <div className="flex flex-row gap-x-4 items-center">
           {navigationMenu.map((item) => {
             return (
-              <li key={item.name} className="list-none">
+              <li key={item.name} className="list-none ">
                 <a href={item.link}> {item.name}</a>
               </li>
             );
