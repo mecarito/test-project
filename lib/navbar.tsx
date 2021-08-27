@@ -26,7 +26,7 @@ export default function Navbar() {
 
   return (
     <div className="flex flex-row items-center justify-between py-3">
-      <h1 className="text-black text-2xl">AfyaYako</h1>
+      <h1 className="text-black text-2xl font-semibold">AfyaYako</h1>
       <div className="flex flex-row space-x-16">
         <div className="flex flex-row gap-x-8 items-center">
           {navigationMenu.map((data) => {

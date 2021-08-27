@@ -13,7 +13,7 @@ export interface Reviews {
 export function ReviewsDetails(props: { details: Reviews[] }) {
   return (
     <div className="mt-8">
-      <div className="text-2xl mb-4 flex flex-row space-x-2">
+      <div className="text-2xl mb-6 flex flex-row space-x-2">
         <p> {props.details.length}</p>
         <h1>Reviews</h1>
       </div>
@@ -24,7 +24,7 @@ export function ReviewsDetails(props: { details: Reviews[] }) {
             <div className="flex flex-row gap-x-2 items-center">
               <Image
                 src={data.image}
-                alt="logged in user"
+                alt="user"
                 width={40}
                 height={40}
                 className="rounded-full"
@@ -33,12 +33,14 @@ export function ReviewsDetails(props: { details: Reviews[] }) {
               <div className="flex flex-col ">
                 <p className="text-lg">{data.name}</p>
                 <div className="flex flex-row items-center gap-x-2">
-                  <Image
-                    src={star}
-                    alt="logged in user"
-                    width={15}
-                    height={15}
-                  />
+                  <div>
+                    <Image
+                      src={star}
+                      alt="rating icon"
+                      width={15}
+                      height={15}
+                    />
+                  </div>
                   <p className="text-secondary">{data.rating}</p>
                   <p className="ml-2 text-gray-600">{data.date}</p>
                 </div>

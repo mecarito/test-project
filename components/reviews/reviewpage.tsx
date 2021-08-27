@@ -7,11 +7,15 @@ import data from "../../Dummydata/data.json";
 export function ReviewsPage() {
   const reviews = data.reviews;
   return (
-    <div className="mx-28 my-8">
-      <h1 className="text-3xl mb-8">Reviews</h1>
-      <ReviewsRatings />
-      <ReviewsStats />
-      <ReviewsDetails details={reviews} />
+    <div className="mx-24 my-8">
+      <h1 className="text-3xl mb-4 mt-12">Reviews</h1>
+      <div className="grid grid-cols-3 gap-8">
+        <div className="col-span-2">
+          <ReviewsRatings />
+          <ReviewsDetails details={reviews} />
+        </div>
+        <ReviewsStats />
+      </div>
     </div>
   );
 }
